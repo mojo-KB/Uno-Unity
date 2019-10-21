@@ -1,0 +1,1471 @@
+fileFormatVersion: 2
+guid: bb89d2c49015f6c4ab1550a20fb2b49a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4566788462514788548
+    second: Red-Zero
+  - first:
+      213: -2984495457209105044
+    second: Red-One
+  - first:
+      213: -7368257316130989912
+    second: Red-Two
+  - first:
+      213: 6448531648308311002
+    second: Red-Three
+  - first:
+      213: 5523559669691071264
+    second: Red-Four
+  - first:
+      213: -2301621837427813508
+    second: Red-Five
+  - first:
+      213: 7007898234030337184
+    second: Red-Six
+  - first:
+      213: -6810795310482593237
+    second: Red-Seven
+  - first:
+      213: 598372598684592966
+    second: Red-Eight
+  - first:
+      213: 8949102707861295087
+    second: Red-Nine
+  - first:
+      213: 8928446167170155048
+    second: Red-Block
+  - first:
+      213: -4609276139165890943
+    second: Red-Reverse
+  - first:
+      213: 5360788899847519290
+    second: Red-AddTwo
+  - first:
+      213: 4436003131110972666
+    second: Black-ChangeColor
+  - first:
+      213: -4850601555557744790
+    second: Yellow-Zero
+  - first:
+      213: 1944267772831198223
+    second: Yellow-One
+  - first:
+      213: 5542187953496610846
+    second: Yellow-Two
+  - first:
+      213: -7691039582965581983
+    second: Yellow-Three
+  - first:
+      213: 8446119864735365504
+    second: Yellow-Four
+  - first:
+      213: 6453142869773686373
+    second: Yellow-Five
+  - first:
+      213: 5194715104678033384
+    second: Yellow-Six
+  - first:
+      213: -921191864141589557
+    second: Yellow-Seven
+  - first:
+      213: -8884006136363933832
+    second: Yellow-Eight
+  - first:
+      213: 6871493863980055835
+    second: Yellow-Nine
+  - first:
+      213: 1382009812325041145
+    second: Yellow-Block
+  - first:
+      213: -3253666720247673105
+    second: Yellow-Reverse
+  - first:
+      213: 8509416730944626353
+    second: Yellow-AddTwo
+  - first:
+      213: -6005056910519291395
+    second: uno-deck_27
+  - first:
+      213: 6021853926487346875
+    second: Green-Zero
+  - first:
+      213: 3021521763825766914
+    second: Green-One
+  - first:
+      213: -6123986801797307773
+    second: Green-Two
+  - first:
+      213: -1670003476463466340
+    second: Green-Three
+  - first:
+      213: 6828918176646953916
+    second: Green-Four
+  - first:
+      213: -1811241702834723845
+    second: Green-Five
+  - first:
+      213: 4775703362326258258
+    second: Green-Six
+  - first:
+      213: 2533832578377607479
+    second: Green-Seven
+  - first:
+      213: -5846936833931684112
+    second: Green-Eight
+  - first:
+      213: -5347407632284435816
+    second: Green-Nine
+  - first:
+      213: -1336396640514531731
+    second: Green-Block
+  - first:
+      213: 5930540406820687592
+    second: Green-Reverse
+  - first:
+      213: 5596950854454436500
+    second: Green-AddTwo
+  - first:
+      213: 8056874384863791076
+    second: Black-AddFour
+  - first:
+      213: -8633569748119956601
+    second: Blue-Zero
+  - first:
+      213: 5283598517094189259
+    second: Blue-One
+  - first:
+      213: -708281246357046596
+    second: Blue-Two
+  - first:
+      213: -7184865938060733543
+    second: Blue-Three
+  - first:
+      213: -9040918340918455793
+    second: Blue-Four
+  - first:
+      213: 5957809722763155319
+    second: Blue-Five
+  - first:
+      213: -5130503177238975324
+    second: Blue-Six
+  - first:
+      213: -3178328823153353683
+    second: Blue-Seven
+  - first:
+      213: 2109064239986447824
+    second: Blue-Eight
+  - first:
+      213: -8052432326869545230
+    second: Blue-Nine
+  - first:
+      213: -6421258048301385282
+    second: Blue-Block
+  - first:
+      213: -2526327328162166059
+    second: Blue-Reverse
+  - first:
+      213: 6649246435878436206
+    second: Blue-AddTwo
+  - first:
+      213: 7745598937590405329
+    second: uno-deck_55
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Red-Zero
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 383
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ece9e3bd8a6f5e14fb038d273935a1bc
+      internalID: -4566788462514788548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red-One
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 383
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08df6e7987f4e414e90a500e3f509633
+      internalID: -2984495457209105044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red-Two
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 383
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a33e11e4e66a9489e78bfe25ba6545
+      internalID: -7368257316130989912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red-Three
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 383
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c0686abb3c0214eaf2d4b09b0c4257
+      internalID: 6448531648308311002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red-Four
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 383
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6cc6f62eb9f3e842ab06585a7f25608
+      internalID: 5523559669691071264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red-Five
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 383
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e161a33160acf4fa44ba9f73da00a8
+      internalID: -2301621837427813508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red-Six
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 383
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a33b8de1f107e24f9c8f7bce5a30779
+      internalID: 7007898234030337184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red-Seven
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 383
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a285ce6c8244112429d62abe4b5af357
+      internalID: -6810795310482593237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red-Eight
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 383.25
+        width: 85.07143
+        height: 127.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a375771dfec1ac34fa40a40d351c5a13
+      internalID: 598372598684592966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red-Nine
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 383.25
+        width: 85.07143
+        height: 127.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1527276e3787ea54c8592ade225759ef
+      internalID: 8949102707861295087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red-Block
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 383.25
+        width: 85.07143
+        height: 127.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17284d2dd8c083b40991485394e5cb12
+      internalID: 8928446167170155048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red-Reverse
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 383.25
+        width: 85.07143
+        height: 127.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdaef6c8a7d3ecc48a1685601bc4b71f
+      internalID: -4609276139165890943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red-AddTwo
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 383.25
+        width: 85.07143
+        height: 127.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a04834ca76f1de4449ec563643e14c41
+      internalID: 5360788899847519290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black-ChangeColor
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 383.25
+        width: 85.07143
+        height: 127.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d559a8c1488567c468c25a9b8ec7e8fc
+      internalID: 4436003131110972666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow-Zero
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 469f6043b34afe74ea390c853dcf547d
+      internalID: -4850601555557744790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow-One
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 256
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b90f50592c97a439cbfbe2a8e9c194
+      internalID: 1944267772831198223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow-Two
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 255
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3476ada3658640340954ceced257412b
+      internalID: 5542187953496610846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow-Three
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ede278b7371872d489d074fd8d9459dd
+      internalID: -7691039582965581983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow-Four
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 256
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85689f498ce48b245bd8bae995415ae8
+      internalID: 8446119864735365504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow-Five
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 256
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79deebe9b423cab4a83d2a6b8e04f9f4
+      internalID: 6453142869773686373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow-Six
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 256
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c7edf4319afe44ba30bc478a2252f3
+      internalID: 5194715104678033384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow-Seven
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 255
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 765addd9bdd124648ac2717b569c43df
+      internalID: -921191864141589557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow-Eight
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 254
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac32bcaa880c2b44fb2cc678a234b82e
+      internalID: -8884006136363933832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow-Nine
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 254
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a280a0c20354f645b0b99d5ef36c035
+      internalID: 6871493863980055835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow-Block
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 255
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c98ca8236f1914eb6dcdad3f288c76
+      internalID: 1382009812325041145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow-Reverse
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 256.25
+        width: 85.07143
+        height: 127.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b28948a25daba074287fcccb7da4a55a
+      internalID: -3253666720247673105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow-AddTwo
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 256.25
+        width: 85.07143
+        height: 127.75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a87571e572428d40bbb49bd353a658e
+      internalID: 8509416730944626353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uno-deck_27
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 254
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aa6e31158463b94799d0a47bf52722c
+      internalID: -6005056910519291395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green-Zero
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 126
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 820693664048500459cd53f4d99184ab
+      internalID: 6021853926487346875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green-One
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 126
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ada46194502428b459d83267a556d28c
+      internalID: 3021521763825766914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green-Two
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 127
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 489b7a29ee867cb4b89e884416143db3
+      internalID: -6123986801797307773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green-Three
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b575f31ba38f25342aadae1100c5c669
+      internalID: -1670003476463466340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green-Four
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 127
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2adab122a0b32c449a19a283a155c482
+      internalID: 6828918176646953916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green-Five
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 126
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab989d271425b8e45832dd6be6b49520
+      internalID: -1811241702834723845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green-Six
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 126
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d647dfe619fc5524ab65560be79fca01
+      internalID: 4775703362326258258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green-Seven
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 127
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e33750bb2d927694ba7332c5cba8a6db
+      internalID: 2533832578377607479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green-Eight
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 127
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8b8914ce265f0e4a88bc7aa420dbef4
+      internalID: -5846936833931684112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green-Nine
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 126
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faa653b0b3e9fec4d8e74f1133a4650d
+      internalID: -5347407632284435816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green-Block
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 126
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 141f2c66484144546b54a0f4300da314
+      internalID: -1336396640514531731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green-Reverse
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 126
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0dda7ab2e25bd94d90a095b14f0278e
+      internalID: 5930540406820687592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green-AddTwo
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 126
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b29fe8c4e607504a89dfc3c37d03f4c
+      internalID: 5596950854454436500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black-AddFour
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 126
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2eb89e4a6802c54db294df2ed0f02ea
+      internalID: 8056874384863791076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue-Zero
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5569264cc0474a042816be77480faca3
+      internalID: -8633569748119956601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue-One
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 0
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db409410d33032649a183240bdffb5e2
+      internalID: 5283598517094189259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue-Two
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 0
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bca708d534886ec409b3c591b3755b13
+      internalID: -708281246357046596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue-Three
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f4e55482845a24418ba8b728aa07c65
+      internalID: -7184865938060733543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue-Four
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 0
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3589805c5c94d8c479b8409c67680156
+      internalID: -9040918340918455793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue-Five
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 0
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dad6e3c375fb2b448b278da70ea35e7
+      internalID: 5957809722763155319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue-Six
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 0
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34f9b45bbfa2c5742be96d93d6c863ff
+      internalID: -5130503177238975324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue-Seven
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 0
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3f094716c607fc499d28cf17f1e196a
+      internalID: -3178328823153353683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue-Eight
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 0
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b0dee1b4ae79c47b2a65cf656da88d
+      internalID: 2109064239986447824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue-Nine
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 0
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b10a5e03e3074b04cbddc2ffc55ab119
+      internalID: -8052432326869545230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue-Block
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 0
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed409771d2fe578459795f4db0ec2960
+      internalID: -6421258048301385282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue-Reverse
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 0
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89688be759bd3bf4e993f9530722fce5
+      internalID: -2526327328162166059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue-AddTwo
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 0
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89ef8239c13e0744f9d1cd960e3b3d3b
+      internalID: 6649246435878436206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uno-deck_55
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 0
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d54350f7fda4018479b4b2cc170368e0
+      internalID: 7745598937590405329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
