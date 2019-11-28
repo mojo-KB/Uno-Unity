@@ -21,6 +21,8 @@ public class Move : MonoBehaviour
 
             this.gameObject.transform.localPosition = new Vector3(mousePos.x - startPosX, mousePos.y - startPosY, 0);
         }
+
+        
     }
 
     private void OnMouseDown()

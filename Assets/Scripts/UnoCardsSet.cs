@@ -6,6 +6,7 @@ public class UnoCardsSet : MonoBehaviour
 {
     UnoCards unoCards = new UnoCards();
     public List<UnoCards> cardsSet = new List<UnoCards>();
+    public GameObject playingDeck;
     Sprite[] cardSprites;
 
 
@@ -13,13 +14,24 @@ public class UnoCardsSet : MonoBehaviour
     void Start()
     {
         createShuffleCards();
-        Debug.Log(cardsSet.Count);
+        playingDeck = GameObject.Find("PlayingDeck");
+        SpriteRenderer renderer = playingDeck.GetComponent<SpriteRenderer>();
+
+        foreach (Sprite sprite in cardSprites)
+        {
+            if (sprite.name.Contains(cardsSet[0].color.ToString()) && sprite.name.Contains(cardsSet[0].value.ToString()))
+            {
+                renderer.sprite = sprite;
+                playingDeck.transform.localScale = new Vector3(1.5f,1.5f,1);
+            }
+        }
+        cardsSet.RemoveAt(0);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log(cardsSet.Count);
     }
 
     void createShuffleCards()
