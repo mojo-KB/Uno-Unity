@@ -31,7 +31,7 @@ public class UnoCardsSet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(cardsSet.Count);
+
     }
 
     void createShuffleCards()

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.UI;
 
 public class PlayerHand : MonoBehaviour
 {
@@ -13,7 +14,6 @@ public class PlayerHand : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        LoadHand();
     }
 
     // Update is called once per frame
@@ -33,9 +33,9 @@ public class PlayerHand : MonoBehaviour
         set = GameObject.FindWithTag("Deck").GetComponent<UnoCardsSet>().cardsSet;
         hand = set.Take(7).ToList();
         set.RemoveRange(0, 6);
+
         Sprite[] cardSprites;
-        int x = -5;
-        int y = -4;
+
 
         cardSprites = Resources.LoadAll<Sprite>("Sprites/Cards");
         foreach (var card in hand)
@@ -44,16 +44,16 @@ public class PlayerHand : MonoBehaviour
             {
                 if (sprite.name.Contains(card.color.ToString()) && sprite.name.Contains(card.value.ToString()))
                 {
-                    Vector3 newpos = new Vector3(x, y, 0);
                     GameObject go = new GameObject("Card " + card.value.ToString() + " " + card.color.ToString());
-                    go.transform.SetParent(GameObject.Find("PlayerHand").transform);
+                    go.transform.SetParent(GameObject.Find("PlayerHand").transform, false);
+                    go.AddComponent<LayoutElement>();
                     go.AddComponent<Move>();
                     go.AddComponent<BoxCollider2D>();
                     SpriteRenderer renderer = go.AddComponent<SpriteRenderer>();
                     renderer.sprite = sprite;
-                    renderer.transform.position = newpos;
                     renderer.transform.localScale = new Vector3(1.5f, 1.5f, 1);
-                    x += 1;
+
+                    LayoutRebuilder.MarkLayoutForRebuild(transform as RectTransform);
                 }
             }
         }
