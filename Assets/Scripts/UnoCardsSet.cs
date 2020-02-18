@@ -14,7 +14,7 @@ public class UnoCardsSet : MonoBehaviour
     void Start()
     {
         createShuffleCards();
-        playingDeck = GameObject.Find("PlayingDeck");
+        playingDeck = GameObject.Find("Deck");
         SpriteRenderer renderer = playingDeck.GetComponent<SpriteRenderer>();
 
         foreach (Sprite sprite in cardSprites)
