@@ -4,41 +4,34 @@ using UnityEngine;
 
 public class Move : MonoBehaviour
 {
-    private float startPosX;
+    /*private float startPosX;
     private float startPosY;
     private bool isBeingHold = false;
 
-    Vector3 mousePos;
+    Vector3 mousePos;*/
+    public GameObject selectedCard;
 
+    private void Start()
+    {
+        selectedCard = gameObject;
+    }
 
     // Update is called once per frame
     void Update()
     {
-        if (isBeingHold)
-        {
-            mousePos = Input.mousePosition;
-            mousePos = Camera.main.ScreenToWorldPoint(mousePos);
-
-            this.gameObject.transform.localPosition = new Vector3(mousePos.x - startPosX, mousePos.y - startPosY, 0);
-        }
-
-        
+           
     }
 
     private void OnMouseDown()
     {
-        mousePos = Input.mousePosition;
-        mousePos = Camera.main.ScreenToWorldPoint(mousePos);
-
-        startPosX = mousePos.x - this.transform.localPosition.x;
-        startPosY = mousePos.y - this.transform.localPosition.y;
-
-        isBeingHold = true;
-    }
-
-    private void OnMouseUp()
-    {
-        isBeingHold = false;
+        string[] name = gameObject.name.Split(" ".ToCharArray());
+        for(int i = 0; i < name.Length; i++)
+        {
+            if(GameObject.Find("PlayingDeck").GetComponent<SpriteRenderer>().sprite.name.Contains(name[i])){
+                GameObject.Find("PlayingDeck").GetComponent<SpriteRenderer>().sprite = gameObject.GetComponent<SpriteRenderer>().sprite;
+                Destroy(gameObject);
+            }
+        }
     }
 
 }

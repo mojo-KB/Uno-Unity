@@ -14,7 +14,7 @@ public class UnoCardsSet : MonoBehaviour
     void Start()
     {
         createShuffleCards();
-        playingDeck = GameObject.Find("Deck");
+        playingDeck = GameObject.Find("PlayingDeck");
         SpriteRenderer renderer = playingDeck.GetComponent<SpriteRenderer>();
 
         foreach (Sprite sprite in cardSprites)
@@ -45,8 +45,7 @@ public class UnoCardsSet : MonoBehaviour
         for (int i = 0; i < n; i++)
         {
             UnoCards unoCards;
-            // NextDouble returns a random number between 0 and 1.
-            // ... It is equivalent to Math.random() in Java.
+
             int r = i + (int)(_random.NextDouble() * (n - i));
             unoCards = cardsSet[r];
             cardsSet[r] = cardsSet[i];
