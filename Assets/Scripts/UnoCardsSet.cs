@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
+using UnityEngine.UI;
 
 public class UnoCardsSet : MonoBehaviour
 {
@@ -28,12 +30,6 @@ public class UnoCardsSet : MonoBehaviour
         cardsSet.RemoveAt(0);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     void createShuffleCards()
     {
         cardSprites = Resources.LoadAll<Sprite>("Sprites/Cards");
@@ -51,5 +47,27 @@ public class UnoCardsSet : MonoBehaviour
             cardsSet[r] = cardsSet[i];
             cardsSet[i] = unoCards;
         }
+    }
+    private void OnMouseDown()
+    {
+        GameObject go = new GameObject("Card " + cardsSet.First().value.ToString() + " " + cardsSet.First().color.ToString());
+        go.transform.SetParent(GameObject.Find("PlayerHand").transform, false);
+        go.AddComponent<LayoutElement>();
+        go.AddComponent<Move>();
+        go.AddComponent<BoxCollider2D>();
+        SpriteRenderer renderer = go.AddComponent<SpriteRenderer>();
+        
+        //Since my logic was fucked up at the beginning of the project, I have to use a foreach to fix a sprite..
+        foreach (Sprite sprite in cardSprites)
+        {
+            if (sprite.name.Contains(cardsSet.First().color.ToString()) && sprite.name.Contains(cardsSet.First().value.ToString()))
+            {
+                renderer.sprite = sprite;
+                renderer.transform.localScale = new Vector3(1.5f, 1.5f, 1);
+            }
+        }
+        
+        cardsSet.RemoveAt(0);
+        LayoutRebuilder.MarkLayoutForRebuild(transform as RectTransform);
     }
 }

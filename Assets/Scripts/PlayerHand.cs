@@ -32,7 +32,7 @@ public class PlayerHand : MonoBehaviour
     {
         set = GameObject.FindWithTag("Deck").GetComponent<UnoCardsSet>().cardsSet;
         hand = set.Take(7).ToList();
-        set.RemoveRange(0, 6);
+        set.RemoveRange(0, 7);
 
         Sprite[] cardSprites;
 

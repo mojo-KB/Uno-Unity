@@ -3,12 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Move : MonoBehaviour
-{
-    /*private float startPosX;
-    private float startPosY;
-    private bool isBeingHold = false;
-
-    Vector3 mousePos;*/
+{ 
     public GameObject selectedCard;
 
     private void Start()
@@ -30,6 +25,11 @@ public class Move : MonoBehaviour
             if(GameObject.Find("PlayingDeck").GetComponent<SpriteRenderer>().sprite.name.Contains(name[i])){
                 GameObject.Find("PlayingDeck").GetComponent<SpriteRenderer>().sprite = gameObject.GetComponent<SpriteRenderer>().sprite;
                 Destroy(gameObject);
+            }else if (gameObject.GetComponent<SpriteRenderer>().sprite.name.Contains("Black"))
+            {
+                GameObject.Find("PlayingDeck").GetComponent<SpriteRenderer>().sprite = gameObject.GetComponent<SpriteRenderer>().sprite;
+                Destroy(gameObject);
+                //ask for color
             }
         }
     }
