@@ -24,8 +24,6 @@ public class PlayerHand : MonoBehaviour
             LoadHand();
             loading = false;
         }
-
-
     }
     
     void LoadHand()

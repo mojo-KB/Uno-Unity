@@ -9,6 +9,7 @@ public class UnoCardsSet : MonoBehaviour
     UnoCards unoCards = new UnoCards();
     public List<UnoCards> cardsSet = new List<UnoCards>();
     public GameObject playingDeck;
+    public GameObject selectColor;
     Sprite[] cardSprites;
 
 
@@ -17,6 +18,7 @@ public class UnoCardsSet : MonoBehaviour
     {
         createShuffleCards();
         playingDeck = GameObject.Find("PlayingDeck");
+        selectColor = GameObject.Find("SelectColor");
         SpriteRenderer renderer = playingDeck.GetComponent<SpriteRenderer>();
 
         foreach (Sprite sprite in cardSprites)
@@ -28,7 +30,15 @@ public class UnoCardsSet : MonoBehaviour
             }
         }
         cardsSet.RemoveAt(0);
+        selectColor.SetActive(false);
+        
     }
+
+    private void Update()
+    {
+
+    }
+
 
     void createShuffleCards()
     {
