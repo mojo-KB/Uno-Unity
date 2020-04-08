@@ -5,12 +5,12 @@ using UnityEngine;
 public class Move : MonoBehaviour
 { 
     public GameObject selectedCard;
-    public UnoCardsSet selectColor;
+    public GameObject selectColor;
 
     private void Start()
     {
         selectedCard = gameObject;
-        selectColor = GameObject.Find("Deck").GetComponent<UnoCardsSet>();
+        selectColor = GameObject.Find("Deck").GetComponent<UnoCardsSet>().selectColor;
     }
 
     // Update is called once per frame
@@ -26,14 +26,16 @@ public class Move : MonoBehaviour
         {
             if (GameObject.Find("PlayingDeck").GetComponent<SpriteRenderer>().sprite.name.Contains(name[i])){
                 GameObject.Find("PlayingDeck").GetComponent<SpriteRenderer>().sprite = gameObject.GetComponent<SpriteRenderer>().sprite;
+                GameObject.Find("PlayingDeck").GetComponent<SpriteRenderer>().color = Color.white;
                 Destroy(gameObject);
             }
             else if (gameObject.GetComponent<SpriteRenderer>().sprite.name.Contains("Black"))
             {
                 GameObject.Find("PlayingDeck").GetComponent<SpriteRenderer>().sprite = gameObject.GetComponent<SpriteRenderer>().sprite;
+                GameObject.Find("PlayingDeck").GetComponent<SpriteRenderer>().color = Color.white;
                 Destroy(gameObject);
 
-                selectColor.selectColor.SetActive(true);
+                selectColor.SetActive(true);
             }
         }
     }

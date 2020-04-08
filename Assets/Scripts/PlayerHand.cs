@@ -24,6 +24,7 @@ public class PlayerHand : MonoBehaviour
             LoadHand();
             loading = false;
         }
+        LayoutRebuilder.MarkLayoutForRebuild(transform as RectTransform);
     }
     
     void LoadHand()
