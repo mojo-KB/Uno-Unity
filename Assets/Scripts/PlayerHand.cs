@@ -33,26 +33,49 @@ public class PlayerHand : MonoBehaviour
         hand = set.Take(7).ToList();
         set.RemoveRange(0, 7);
 
-        Sprite[] cardSprites;
+        Sprite[] cardSprites = Resources.LoadAll<Sprite>("Sprites/Cards");
+        Sprite backCard = Resources.Load<Sprite>("Sprites/Cards/UNO-Back");
 
-
-        cardSprites = Resources.LoadAll<Sprite>("Sprites/Cards");
-        foreach (var card in hand)
+        if(GameObject.FindWithTag("IA") == gameObject)
         {
-            foreach (Sprite sprite in cardSprites)
+            Debug.Log("Hello i'm IA");
+            foreach (var card in hand)
             {
-                if (sprite.name.Contains(card.color.ToString()) && sprite.name.Contains(card.value.ToString()))
+                foreach (Sprite sprite in cardSprites)
                 {
-                    GameObject go = new GameObject("Card " + card.value.ToString() + " " + card.color.ToString());
-                    go.transform.SetParent(GameObject.Find("PlayerHand").transform, false);
-                    go.AddComponent<LayoutElement>();
-                    go.AddComponent<Move>();
-                    go.AddComponent<BoxCollider2D>();
-                    SpriteRenderer renderer = go.AddComponent<SpriteRenderer>();
-                    renderer.sprite = sprite;
-                    renderer.transform.localScale = new Vector3(1.5f, 1.5f, 1);
+                    if (sprite.name.Contains(card.color.ToString()) && sprite.name.Contains(card.value.ToString()))
+                    {
+                        GameObject go = new GameObject("Card " + card.value.ToString() + " " + card.color.ToString());
+                        go.transform.SetParent(gameObject.transform, false);
+                        go.AddComponent<LayoutElement>();
+                        SpriteRenderer renderer = go.AddComponent<SpriteRenderer>();
+                        renderer.sprite = backCard;
+                        renderer.transform.localScale = new Vector3(0.3f, 0.3f, 1);
 
-                    LayoutRebuilder.MarkLayoutForRebuild(transform as RectTransform);
+                        LayoutRebuilder.MarkLayoutForRebuild(transform as RectTransform);
+                    }
+                }
+            }
+        }
+        else {
+            Debug.Log("Hello i'm player");
+            foreach (var card in hand)
+            {
+                foreach (Sprite sprite in cardSprites)
+                {
+                    if (sprite.name.Contains(card.color.ToString()) && sprite.name.Contains(card.value.ToString()))
+                    {
+                        GameObject go = new GameObject("Card " + card.value.ToString() + " " + card.color.ToString());
+                        go.transform.SetParent(gameObject.transform, false);
+                        go.AddComponent<LayoutElement>();
+                        go.AddComponent<Move>();
+                        go.AddComponent<BoxCollider2D>();
+                        SpriteRenderer renderer = go.AddComponent<SpriteRenderer>();
+                        renderer.sprite = sprite;
+                        renderer.transform.localScale = new Vector3(1.5f, 1.5f, 1);
+
+                        LayoutRebuilder.MarkLayoutForRebuild(transform as RectTransform);
+                    }
                 }
             }
         }

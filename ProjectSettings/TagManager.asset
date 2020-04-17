@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Deck
   - PlayingDeck
+  - IA
   layers:
   - Default
   - TransparentFX
