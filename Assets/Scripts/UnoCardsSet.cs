@@ -4,6 +4,13 @@ using UnityEngine;
 using System.Linq;
 using UnityEngine.UI;
 
+public enum GameState
+{
+    PLAYERTURN,
+    IATURN,
+    WIN,
+    LOSE
+}
 public class UnoCardsSet : MonoBehaviour
 {
     UnoCards unoCards = new UnoCards();
@@ -12,6 +19,7 @@ public class UnoCardsSet : MonoBehaviour
     public GameObject selectColor;
     Sprite[] cardSprites;
 
+    public GameState state;
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +39,7 @@ public class UnoCardsSet : MonoBehaviour
         }
         cardsSet.RemoveAt(0);
         selectColor.SetActive(false);
-        
+        state = GameState.PLAYERTURN;
     }
 
     private void Update()
@@ -80,4 +88,16 @@ public class UnoCardsSet : MonoBehaviour
         cardsSet.RemoveAt(0);
         LayoutRebuilder.MarkLayoutForRebuild(transform as RectTransform);
     }
+
+    public void GiveIACard()
+    {
+        GameObject go = new GameObject("Card " + cardsSet.First().value.ToString() + " " + cardsSet.First().color.ToString());
+        go.transform.SetParent(GameObject.Find("IAHand").transform, false);
+        go.AddComponent<LayoutElement>();
+        SpriteRenderer renderer = go.AddComponent<SpriteRenderer>();
+        renderer.sprite = Resources.Load<Sprite>("Sprites/Cards/UNO-Back");
+        renderer.transform.localScale = new Vector3(0.3f, 0.3f, 1);
+
+        cardsSet.RemoveAt(0);
+    } 
 }

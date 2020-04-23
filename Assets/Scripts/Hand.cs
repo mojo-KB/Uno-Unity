@@ -4,7 +4,7 @@ using UnityEngine;
 using System.Linq;
 using UnityEngine.UI;
 
-public class PlayerHand : MonoBehaviour
+public class Hand : MonoBehaviour
 {
     List<UnoCards> hand = new List<UnoCards>();
     List<UnoCards> set;
@@ -27,6 +27,7 @@ public class PlayerHand : MonoBehaviour
         LayoutRebuilder.MarkLayoutForRebuild(transform as RectTransform);
     }
     
+    //Give to each player a set of cards.
     void LoadHand()
     {
         set = GameObject.FindWithTag("Deck").GetComponent<UnoCardsSet>().cardsSet;
@@ -38,7 +39,6 @@ public class PlayerHand : MonoBehaviour
 
         if(GameObject.FindWithTag("IA") == gameObject)
         {
-            Debug.Log("Hello i'm IA");
             foreach (var card in hand)
             {
                 foreach (Sprite sprite in cardSprites)
@@ -58,7 +58,6 @@ public class PlayerHand : MonoBehaviour
             }
         }
         else {
-            Debug.Log("Hello i'm player");
             foreach (var card in hand)
             {
                 foreach (Sprite sprite in cardSprites)
