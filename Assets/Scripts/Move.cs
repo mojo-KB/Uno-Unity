@@ -6,13 +6,24 @@ public class Move : MonoBehaviour
 { 
     public GameObject selectedCard;
     public GameObject selectColor;
+    public GameObject playingDeck;
     public UnoCardsSet deck;
+    private Hashtable ht;
 
     private void Start()
     {
         selectedCard = gameObject;
         deck = GameObject.Find("Deck").GetComponent<UnoCardsSet>();
+        playingDeck = GameObject.Find("PlayingDeck");
         selectColor = deck.selectColor;
+
+        ht = new Hashtable();
+        ht.Add("x", 0.99f);
+        ht.Add("y", 0.1f);
+        ht.Add("z", -6);
+        ht.Add("speed", 30);
+        ht.Add("time", .6f);
+        ht.Add("oncomplete", "ShowNewPlayingCard");
     }
 
     // Update is called once per frame
@@ -24,25 +35,42 @@ public class Move : MonoBehaviour
     private void OnMouseDown()
     {
         if(deck.state == GameState.PLAYERTURN) {
-            string[] name = gameObject.name.Split(" ".ToCharArray());
-            for(int i = 0; i < name.Length; i++)
-            {
-                if (GameObject.Find("PlayingDeck").GetComponent<SpriteRenderer>().sprite.name.Contains(name[i])){
-                    GameObject.Find("PlayingDeck").GetComponent<SpriteRenderer>().sprite = gameObject.GetComponent<SpriteRenderer>().sprite;
-                    GameObject.Find("PlayingDeck").GetComponent<SpriteRenderer>().color = Color.white;
-                    Destroy(gameObject);
-                }
-                else if (gameObject.GetComponent<SpriteRenderer>().sprite.name.Contains("Black"))
-                {
-                    GameObject.Find("PlayingDeck").GetComponent<SpriteRenderer>().sprite = gameObject.GetComponent<SpriteRenderer>().sprite;
-                    GameObject.Find("PlayingDeck").GetComponent<SpriteRenderer>().color = Color.white;
-                    Destroy(gameObject);
+            string[] name = gameObject.name.Split(" ".ToCharArray()); //index 1 is "number" or text and index 2 is color.
 
-                    selectColor.SetActive(true);
+            
+
+            if (playingDeck.GetComponent<SpriteRenderer>().sprite.name.Contains(name[2]) || playingDeck.GetComponent<SpriteRenderer>().sprite.name.Contains(name[1]) && !gameObject.GetComponent<SpriteRenderer>().sprite.name.Contains("AddTwo")){
+                //Detach gameobject from parent to use iTwee animation.
+                gameObject.transform.parent = null;
+                iTween.MoveTo(gameObject, ht);
+                if(name[1] == "Block" || name[1] == "Reverse" || name[1] == "AddTwo")
+                {
+                    deck.state = GameState.PLAYERTURN;
+                }
+                else { 
+                    deck.state = GameState.IATURN;
                 }
             }
-            deck.state = GameState.IATURN;
+            else if (gameObject.GetComponent<SpriteRenderer>().sprite.name.Contains("Black"))
+            {
+                gameObject.transform.parent = null;
+                iTween.MoveTo(gameObject, ht);
+                selectColor.SetActive(true);
+            }
+            else if (GameObject.Find("PlayingDeck").GetComponent<SpriteRenderer>().sprite.name.Contains(name[2]) && gameObject.GetComponent<SpriteRenderer>().sprite.name.Contains("AddTwo"))
+            {
+                gameObject.transform.parent = null;
+                iTween.MoveTo(gameObject, ht);
+                deck.AddTwoCards(gameObject.transform.parent.gameObject);
+                deck.state = GameState.IATURN;
+            }
         }
     }
 
+    private void ShowNewPlayingCard()
+    {
+        playingDeck.GetComponent<SpriteRenderer>().sprite = gameObject.GetComponent<SpriteRenderer>().sprite;
+        playingDeck.GetComponent<SpriteRenderer>().color = Color.white;
+        Destroy(gameObject);
+    }
 }

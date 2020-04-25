@@ -87,6 +87,7 @@ public class UnoCardsSet : MonoBehaviour
         
         cardsSet.RemoveAt(0);
         LayoutRebuilder.MarkLayoutForRebuild(transform as RectTransform);
+        state = GameState.IATURN;
     }
 
     public void GiveIACard()
@@ -100,4 +101,73 @@ public class UnoCardsSet : MonoBehaviour
 
         cardsSet.RemoveAt(0);
     } 
+
+    public void AddTwoCards(GameObject player)
+    {
+        for (int i = 0; i < 2; i++)
+        {
+            Debug.Log(i);
+            GameObject go = new GameObject("Card " + cardsSet.First().value.ToString() + " " + cardsSet.First().color.ToString());
+            go.AddComponent<LayoutElement>();
+            SpriteRenderer renderer = go.AddComponent<SpriteRenderer>();
+
+            if (player.tag == "Player")
+            {
+                go.transform.SetParent(GameObject.Find("IAHand").transform, false);
+                renderer.sprite = Resources.Load<Sprite>("Sprites/Cards/UNO-Back");
+                renderer.transform.localScale = new Vector3(0.3f, 0.3f, 1);
+            }
+            else
+            {
+                go.transform.SetParent(GameObject.Find("PlayerHand").transform, false);
+                go.AddComponent<Move>();
+                go.AddComponent<BoxCollider2D>();
+
+                foreach (Sprite sprite in cardSprites)
+                {
+                    if (sprite.name.Contains(cardsSet.First().color.ToString()) && sprite.name.Contains(cardsSet.First().value.ToString()))
+                    {
+                        renderer.sprite = sprite;
+                        renderer.transform.localScale = new Vector3(1.5f, 1.5f, 1);
+                    }
+                }
+            }
+
+            cardsSet.RemoveAt(0);
+        }
+    }
+
+    public void AddFourCards(GameObject player)
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            GameObject go = new GameObject("Card " + cardsSet.First().value.ToString() + " " + cardsSet.First().color.ToString());
+            go.AddComponent<LayoutElement>();
+            SpriteRenderer renderer = go.AddComponent<SpriteRenderer>();
+
+            if (player.tag == "Player")
+            {
+                go.transform.SetParent(GameObject.Find("IAHand").transform, false);
+                renderer.sprite = Resources.Load<Sprite>("Sprites/Cards/UNO-Back");
+                renderer.transform.localScale = new Vector3(0.3f, 0.3f, 1);
+            }
+            else
+            {
+                go.transform.SetParent(GameObject.Find("PlayerHand").transform, false);
+                go.AddComponent<Move>();
+                go.AddComponent<BoxCollider2D>();
+
+                foreach (Sprite sprite in cardSprites)
+                {
+                    if (sprite.name.Contains(cardsSet.First().color.ToString()) && sprite.name.Contains(cardsSet.First().value.ToString()))
+                    {
+                        renderer.sprite = sprite;
+                        renderer.transform.localScale = new Vector3(1.5f, 1.5f, 1);
+                    }
+                }
+            }
+
+            cardsSet.RemoveAt(0);
+        }       
+    }
 }

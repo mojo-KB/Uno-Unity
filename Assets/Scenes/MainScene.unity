@@ -274,6 +274,7 @@ GameObject:
   - component: {fileID: 129479297}
   - component: {fileID: 129479296}
   - component: {fileID: 129479298}
+  - component: {fileID: 129479299}
   m_Layer: 0
   m_Name: IAHand
   m_TagString: IA
@@ -335,6 +336,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ce19b2effbfe6cd45b1c1958f309bb69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &129479299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129479295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fe3b8722bc896b4b80e928dfff48a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &130726165
@@ -427,7 +440,7 @@ GameObject:
   - component: {fileID: 409610309}
   m_Layer: 0
   m_Name: PlayerHand
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1419,6 +1432,7 @@ MonoBehaviour:
   cardsSet: []
   playingDeck: {fileID: 1432492888}
   selectColor: {fileID: 884565222}
+  state: 0
 --- !u!114 &1355965191
 MonoBehaviour:
   m_ObjectHideFlags: 0

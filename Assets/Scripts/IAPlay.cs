@@ -30,11 +30,9 @@ public class IAPlay : MonoBehaviour
     private void PlayCard()
     {
         bool pick = true;
-        Debug.Log("IA Turn:");
         for(int i = 0; i < gameObject.transform.childCount; i++)
         {
             string[] name = gameObject.transform.GetChild(i).name.Split(" ".ToCharArray());
-            Debug.Log(name[2]);
             if (playingDeck.sprite.name.Contains(name[2])) {
                 foreach (Sprite sprite in cardSprites)
                 {
