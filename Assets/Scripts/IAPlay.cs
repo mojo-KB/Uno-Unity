@@ -7,11 +7,15 @@ public class IAPlay : MonoBehaviour
 {
     private UnoCardsSet deck;
     private SpriteRenderer playingDeck;
+    private float timer;
+    private float waitingTime;
     Sprite[] cardSprites;
 
     // Start is called before the first frame update
     void Start()
     {
+        timer = .0f;
+        waitingTime = 3f;
         cardSprites = Resources.LoadAll<Sprite>("Sprites/Cards");
         deck = GameObject.Find("Deck").GetComponent<UnoCardsSet>();
         playingDeck = GameObject.Find("PlayingDeck").GetComponent<SpriteRenderer>();
@@ -22,11 +26,16 @@ public class IAPlay : MonoBehaviour
     {
         if (deck.state == GameState.IATURN)
         {
-            PlayCard();
+            timer += Time.deltaTime;
+            if (timer > waitingTime)
+            {
+                timer = 0f;
+                PlayCard();
+            }
         }
         LayoutRebuilder.MarkLayoutForRebuild(transform as RectTransform);
     }
-
+    //Function for the IA to play a card. It's a really simple way since I don't want to spend more time on this project anymore. I check in a "for" for all the cards I have. If the card is playable, the IA plays it otherwise I go to the next one.
     private void PlayCard()
     {
         bool pick = true;
@@ -41,7 +50,8 @@ public class IAPlay : MonoBehaviour
                         playingDeck.sprite = sprite;
                     }       
                 }
-                Destroy(gameObject.transform.GetChild(i).gameObject);
+                //WIP: Animation when IA plays a card
+                iTween.MoveTo(gameObject.transform.GetChild(i).gameObject, iTween.Hash("x", 0.99f, "y", 0.1f, "z", -6, "speed", 30, "time", .6f, "oncomplete", "DestroyPlayedCard", "oncompletetarget", gameObject, "oncompleteparams", gameObject.transform.GetChild(i).gameObject));
                 pick = false;
                 break;
             }
@@ -51,5 +61,10 @@ public class IAPlay : MonoBehaviour
             deck.GiveIACard();
         }
         deck.state = GameState.PLAYERTURN;
+    }
+
+    private void DestroyPlayedCard(GameObject go)
+    {
+        Destroy(go);
     }
 }

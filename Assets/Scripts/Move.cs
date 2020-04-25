@@ -67,6 +67,7 @@ public class Move : MonoBehaviour
         }
     }
 
+    //Function used when the iTween animation is complete.
     private void ShowNewPlayingCard()
     {
         playingDeck.GetComponent<SpriteRenderer>().sprite = gameObject.GetComponent<SpriteRenderer>().sprite;
