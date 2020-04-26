@@ -37,11 +37,12 @@ public class Move : MonoBehaviour
         if(deck.state == GameState.PLAYERTURN) {
             string[] name = gameObject.name.Split(" ".ToCharArray()); //index 1 is "number" or text and index 2 is color.
 
+            AudioSource audio = gameObject.AddComponent<AudioSource>();
             
-
             if (playingDeck.GetComponent<SpriteRenderer>().sprite.name.Contains(name[2]) || playingDeck.GetComponent<SpriteRenderer>().sprite.name.Contains(name[1]) && !gameObject.GetComponent<SpriteRenderer>().sprite.name.Contains("AddTwo")){
                 //Detach gameobject from parent to use iTwee animation.
                 gameObject.transform.parent = null;
+                audio.PlayOneShot((AudioClip)Resources.Load("Sound/cardPlace1"));
                 iTween.MoveTo(gameObject, ht);
                 if(name[1] == "Block" || name[1] == "Reverse" || name[1] == "AddTwo")
                 {
@@ -54,12 +55,14 @@ public class Move : MonoBehaviour
             else if (gameObject.GetComponent<SpriteRenderer>().sprite.name.Contains("Black"))
             {
                 gameObject.transform.parent = null;
+                audio.PlayOneShot((AudioClip)Resources.Load("Sound/cardPlace1"));
                 iTween.MoveTo(gameObject, ht);
                 selectColor.SetActive(true);
             }
             else if (GameObject.Find("PlayingDeck").GetComponent<SpriteRenderer>().sprite.name.Contains(name[2]) && gameObject.GetComponent<SpriteRenderer>().sprite.name.Contains("AddTwo"))
             {
                 gameObject.transform.parent = null;
+                audio.PlayOneShot((AudioClip)Resources.Load("Sound/cardPlace1"));
                 iTween.MoveTo(gameObject, ht);
                 deck.AddTwoCards(gameObject.transform.parent.gameObject);
                 deck.state = GameState.IATURN;

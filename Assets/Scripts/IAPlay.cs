@@ -42,16 +42,29 @@ public class IAPlay : MonoBehaviour
         for(int i = 0; i < gameObject.transform.childCount; i++)
         {
             string[] name = gameObject.transform.GetChild(i).name.Split(" ".ToCharArray());
-            if (playingDeck.sprite.name.Contains(name[2])) {
+
+            if (playingDeck.sprite.name.Contains(name[2]) || playingDeck.sprite.name.Contains(name[1])) {
                 foreach (Sprite sprite in cardSprites)
                 {
                     if (sprite.name.Contains(name[2]) && sprite.name.Contains(name[1]))
                     {
-                        playingDeck.sprite = sprite;
+                        GameObject go = gameObject.transform.GetChild(i).gameObject;
+                        go.transform.parent = null;
+                        go.GetComponent<SpriteRenderer>().sprite = sprite;
+                        go.GetComponent<SpriteRenderer>().transform.localScale = new Vector3(1.5f, 1.5f, 1);
+                        iTween.MoveTo(go, iTween.Hash(
+                            "x", 0.99f,
+                            "y", 0.1f,
+                            "z", -6,
+                            "speed", 50,
+                            "time", .3f,
+                            "oncomplete",
+                            "DestroyPlayedCard",
+                            "oncompletetarget", gameObject,
+                            "oncompleteparams", go));
                     }       
                 }
-                //WIP: Animation when IA plays a card
-                iTween.MoveTo(gameObject.transform.GetChild(i).gameObject, iTween.Hash("x", 0.99f, "y", 0.1f, "z", -6, "speed", 30, "time", .6f, "oncomplete", "DestroyPlayedCard", "oncompletetarget", gameObject, "oncompleteparams", gameObject.transform.GetChild(i).gameObject));
+                
                 pick = false;
                 break;
             }
@@ -65,6 +78,7 @@ public class IAPlay : MonoBehaviour
 
     private void DestroyPlayedCard(GameObject go)
     {
-        Destroy(go);
+       playingDeck.sprite = go.GetComponent<SpriteRenderer>().sprite;
+       Destroy(go);
     }
 }
