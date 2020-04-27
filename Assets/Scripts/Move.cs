@@ -39,12 +39,12 @@ public class Move : MonoBehaviour
 
             AudioSource audio = gameObject.AddComponent<AudioSource>();
             
-            if (playingDeck.GetComponent<SpriteRenderer>().sprite.name.Contains(name[2]) || playingDeck.GetComponent<SpriteRenderer>().sprite.name.Contains(name[1]) && !gameObject.GetComponent<SpriteRenderer>().sprite.name.Contains("AddTwo")){
+            if ((playingDeck.GetComponent<SpriteRenderer>().sprite.name.Contains(name[2]) || playingDeck.GetComponent<SpriteRenderer>().sprite.name.Contains(name[1])) && !gameObject.GetComponent<SpriteRenderer>().sprite.name.Contains("AddTwo")){
                 //Detach gameobject from parent to use iTwee animation.
                 gameObject.transform.parent = null;
                 audio.PlayOneShot((AudioClip)Resources.Load("Sound/cardPlace1"));
                 iTween.MoveTo(gameObject, ht);
-                if(name[1] == "Block" || name[1] == "Reverse" || name[1] == "AddTwo")
+                if(name[1] == "Block" || name[1] == "Reverse")
                 {
                     deck.state = GameState.PLAYERTURN;
                 }
@@ -64,8 +64,8 @@ public class Move : MonoBehaviour
                 gameObject.transform.parent = null;
                 audio.PlayOneShot((AudioClip)Resources.Load("Sound/cardPlace1"));
                 iTween.MoveTo(gameObject, ht);
-                deck.AddTwoCards(gameObject.transform.parent.gameObject);
-                deck.state = GameState.IATURN;
+                deck.AddTwoCards(true);
+                deck.state = GameState.PLAYERTURN;
             }
         }
     }

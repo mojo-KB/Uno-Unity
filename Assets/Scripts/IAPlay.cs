@@ -48,20 +48,62 @@ public class IAPlay : MonoBehaviour
                 {
                     if (sprite.name.Contains(name[2]) && sprite.name.Contains(name[1]))
                     {
-                        GameObject go = gameObject.transform.GetChild(i).gameObject;
-                        go.transform.parent = null;
-                        go.GetComponent<SpriteRenderer>().sprite = sprite;
-                        go.GetComponent<SpriteRenderer>().transform.localScale = new Vector3(1.5f, 1.5f, 1);
-                        iTween.MoveTo(go, iTween.Hash(
-                            "x", 0.99f,
-                            "y", 0.1f,
-                            "z", -6,
-                            "speed", 50,
-                            "time", .3f,
-                            "oncomplete",
-                            "DestroyPlayedCard",
-                            "oncompletetarget", gameObject,
-                            "oncompleteparams", go));
+                        if(name[1] == "AddTwo")
+                        {
+                            GameObject go = gameObject.transform.GetChild(i).gameObject;
+                            AudioSource audio = go.AddComponent<AudioSource>();
+                            go.transform.parent = null;
+                            go.GetComponent<SpriteRenderer>().sprite = sprite;
+                            go.GetComponent<SpriteRenderer>().transform.localScale = new Vector3(1.5f, 1.5f, 1);
+                            audio.PlayOneShot((AudioClip)Resources.Load("Sound/cardPlace1"));
+                            iTween.MoveTo(go, iTween.Hash(
+                                "x", 0.99f,
+                                "y", 0.1f,
+                                "z", -6,
+                                "speed", 50,
+                                "time", .3f,
+                                "oncomplete",
+                                "DestroyPlayedCard",
+                                "oncompletetarget", gameObject,
+                                "oncompleteparams", go));
+                            deck.AddTwoCards(false);
+                        }
+                        else if(name[1] == "AddFour"){ 
+                            GameObject go = gameObject.transform.GetChild(i).gameObject;
+                            AudioSource audio = go.AddComponent<AudioSource>();
+                            go.transform.parent = null;
+                            go.GetComponent<SpriteRenderer>().sprite = sprite;
+                            go.GetComponent<SpriteRenderer>().transform.localScale = new Vector3(1.5f, 1.5f, 1);
+                            audio.PlayOneShot((AudioClip)Resources.Load("Sound/cardPlace1"));
+                            iTween.MoveTo(go, iTween.Hash(
+                                "x", 0.99f,
+                                "y", 0.1f,
+                                "z", -6,
+                                "speed", 50,
+                                "time", .3f,
+                                "oncomplete",
+                                "DestroyPlayedCard",
+                                "oncompletetarget", gameObject,
+                                "oncompleteparams", go));
+                        }
+                        else{
+                            GameObject go = gameObject.transform.GetChild(i).gameObject;
+                            AudioSource audio = go.AddComponent<AudioSource>();
+                            go.transform.parent = null;
+                            go.GetComponent<SpriteRenderer>().sprite = sprite;
+                            go.GetComponent<SpriteRenderer>().transform.localScale = new Vector3(1.5f, 1.5f, 1);
+                            audio.PlayOneShot((AudioClip)Resources.Load("Sound/cardPlace1"));
+                            iTween.MoveTo(go, iTween.Hash(
+                                "x", 0.99f,
+                                "y", 0.1f,
+                                "z", -6,
+                                "speed", 50,
+                                "time", .3f,
+                                "oncomplete",
+                                "DestroyPlayedCard",
+                                "oncompletetarget", gameObject,
+                                "oncompleteparams", go));
+                        }
                     }       
                 }
                 

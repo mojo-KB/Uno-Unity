@@ -75,6 +75,7 @@ public class UnoCardsSet : MonoBehaviour
         go.AddComponent<LayoutElement>();
         go.AddComponent<Move>();
         go.AddComponent<BoxCollider2D>();
+        AudioSource audio = go.AddComponent<AudioSource>();
         SpriteRenderer renderer = go.AddComponent<SpriteRenderer>();
         
         //Since my logic was fucked up at the beginning of the project, I have to use a foreach to fix a sprite..
@@ -87,42 +88,46 @@ public class UnoCardsSet : MonoBehaviour
             }
         }
 
+        audio.PlayOneShot((AudioClip)Resources.Load("Sound/cardPlace1"));
         iTween.MoveTo(go, iTween.Hash("x", 4, "y", -4.14,"z",-0.2, "speed", 30, "time", .6f,"oncomplete", "AddCardPlayerParent", "oncompletetarget", gameObject, "oncompleteparams", go));
         cardsSet.RemoveAt(0);
         LayoutRebuilder.MarkLayoutForRebuild(transform as RectTransform);
         state = GameState.IATURN;
     }
+
     //Function to give the IA a card when he can't play any card that he have in his hand.
     public void GiveIACard()
     {
         GameObject go = new GameObject("Card " + cardsSet.First().value.ToString() + " " + cardsSet.First().color.ToString());
         go.AddComponent<LayoutElement>();
         SpriteRenderer renderer = go.AddComponent<SpriteRenderer>();
+        AudioSource audio = go.AddComponent<AudioSource>();
+
         renderer.sprite = Resources.Load<Sprite>("Sprites/Cards/UNO-Back");
         renderer.transform.localScale = new Vector3(0.3f, 0.3f, 1);
-        
+        audio.PlayOneShot((AudioClip)Resources.Load("Sound/cardPlace1"));
         iTween.MoveTo(go, iTween.Hash("x", -4, "y", 3.9, "z", -0.2, "speed", 30, "time", .6f, "oncomplete", "AddCardIAParent", "oncompletetarget", gameObject, "oncompleteparams", go));
         cardsSet.RemoveAt(0);
     } 
     //Function to add two cards depending on who played it.
-    public void AddTwoCards(GameObject player)
+    public void AddTwoCards(bool player)
     {
         for (int i = 0; i < 2; i++)
         {
-            Debug.Log(i);
             GameObject go = new GameObject("Card " + cardsSet.First().value.ToString() + " " + cardsSet.First().color.ToString());
             go.AddComponent<LayoutElement>();
+            AudioSource audio = go.AddComponent<AudioSource>();
             SpriteRenderer renderer = go.AddComponent<SpriteRenderer>();
 
-            if (player.tag == "Player")
+            if (player)
             {
-                go.transform.SetParent(GameObject.Find("IAHand").transform, false);
                 renderer.sprite = Resources.Load<Sprite>("Sprites/Cards/UNO-Back");
                 renderer.transform.localScale = new Vector3(0.3f, 0.3f, 1);
+                audio.PlayOneShot((AudioClip)Resources.Load("Sound/cardPlace1"));
+                iTween.MoveTo(go, iTween.Hash("x", -4, "y", 3.9, "z", -0.2, "speed", 5, "time", 2.5f, "oncomplete", "AddCardIAParent", "oncompletetarget", gameObject, "oncompleteparams", go));
             }
             else
             {
-                go.transform.SetParent(GameObject.Find("PlayerHand").transform, false);
                 go.AddComponent<Move>();
                 go.AddComponent<BoxCollider2D>();
 
@@ -134,6 +139,8 @@ public class UnoCardsSet : MonoBehaviour
                         renderer.transform.localScale = new Vector3(1.5f, 1.5f, 1);
                     }
                 }
+                audio.PlayOneShot((AudioClip)Resources.Load("Sound/cardPlace1"));
+                iTween.MoveTo(go, iTween.Hash("x", 4, "y", -4.14, "z", -0.2, "speed", 30, "time", .6f, "oncomplete", "AddCardPlayerParent", "oncompletetarget", gameObject, "oncompleteparams", go));
             }
 
             cardsSet.RemoveAt(0);
