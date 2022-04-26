@@ -171,7 +171,7 @@ TextureImporter:
       213: 7745598937590405329
     second: uno-deck_55
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -191,6 +191,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -199,9 +201,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -222,9 +224,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -1463,6 +1469,63 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Yellow-Three: -7691039582965581983
+      Blue-Reverse: -2526327328162166059
+      Green-Six: 4775703362326258258
+      Yellow-Eight: -8884006136363933832
+      Green-Three: -1670003476463466340
+      Red-Reverse: -4609276139165890943
+      Yellow-One: 1944267772831198223
+      Blue-Block: -6421258048301385282
+      Yellow-Four: 8446119864735365504
+      Black-AddFour: 8056874384863791076
+      Green-Four: 6828918176646953916
+      Yellow-AddTwo: 8509416730944626353
+      Yellow-Zero: -4850601555557744790
+      Red-Two: -7368257316130989912
+      Green-Zero: 6021853926487346875
+      Yellow-Nine: 6871493863980055835
+      Green-Two: -6123986801797307773
+      Red-Nine: 8949102707861295087
+      Yellow-Reverse: -3253666720247673105
+      Blue-Four: -9040918340918455793
+      Red-Block: 8928446167170155048
+      Blue-Three: -7184865938060733543
+      Yellow-Seven: -921191864141589557
+      Blue-Two: -708281246357046596
+      Green-Block: -1336396640514531731
+      Green-AddTwo: 5596950854454436500
+      Red-Four: 5523559669691071264
+      Yellow-Two: 5542187953496610846
+      uno-deck_27: -6005056910519291395
+      Green-Seven: 2533832578377607479
+      Yellow-Five: 6453142869773686373
+      Red-Eight: 598372598684592966
+      Red-Six: 7007898234030337184
+      Blue-Eight: 2109064239986447824
+      Green-Eight: -5846936833931684112
+      Red-One: -2984495457209105044
+      Blue-Five: 5957809722763155319
+      Blue-One: 5283598517094189259
+      Green-One: 3021521763825766914
+      Green-Five: -1811241702834723845
+      Yellow-Six: 5194715104678033384
+      Red-Three: 6448531648308311002
+      Black-ChangeColor: 4436003131110972666
+      Yellow-Block: 1382009812325041145
+      uno-deck_55: 7745598937590405329
+      Green-Nine: -5347407632284435816
+      Red-AddTwo: 5360788899847519290
+      Blue-Six: -5130503177238975324
+      Red-Seven: -6810795310482593237
+      Red-Five: -2301621837427813508
+      Blue-Seven: -3178328823153353683
+      Blue-Zero: -8633569748119956601
+      Blue-AddTwo: 6649246435878436206
+      Blue-Nine: -8052432326869545230
+      Green-Reverse: 5930540406820687592
+      Red-Zero: -4566788462514788548
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
